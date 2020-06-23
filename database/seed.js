@@ -17,7 +17,7 @@ const randomSentences = () => {
   const randomNumber = Math.floor(Math.random() * (max - min) + min);
   let sentence = '';
   for (let i = 0; i < randomNumber; i++) {
-    sentence += faker.lorem.sentence;
+    sentence += `${faker.lorem.sentence()} `;
   }
   return sentence;
 };
